@@ -29,11 +29,11 @@ GOOGLE_API_KEY=<your_google_api_key>
 6. git clone "Your-repository"
 7. sudo apt install python3-pip
 8. pip3 install -r requirements.txt
-#Temporary running
+```#Temporary running
 9. python3 -m streamlit run app.py
-#Permanent running
+```#Permanent running
 9. nohup python3 -m streamlit run app.py
-Note: Streamlit runs on this port: 8501
+```Note: Streamlit runs on this port: 8501
 
 ## Usage
 1. Upload one or more PDF files using the file uploader.
