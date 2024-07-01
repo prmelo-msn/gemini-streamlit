@@ -25,16 +25,32 @@ GOOGLE_API_KEY=<your_google_api_key>
 ```python
 sudo apt update
 ```
-2. sudo apt-get update
-3. sudo apt upgrade -y
-4. sudo apt install git curl unzip tar make sudo vim wget -y
-5. git clone "Your-repository"
-6. sudo apt install python3-pip
-7. pip3 install -r requirements.txt
+```python
+sudo apt-get update
+```
+```python
+sudo apt upgrade -y
+```
+```python
+sudo apt install git curl unzip tar make sudo vim wget -y
+```
+```python
+git clone "Your-repository"
+```
+```python
+sudo apt install python3-pip
+```
+```python
+pip3 install -r requirements.txt
+```
 ###Temporary running
-8. python3 -m streamlit run app.py
+```python
+python3 -m streamlit run app.py
+```
 ###Permanent running
-9. nohup python3 -m streamlit run app.py
+```python
+nohup python3 -m streamlit run app.py
+```
 ###Note: Streamlit runs on this port: 8501
 
 ## Usage
