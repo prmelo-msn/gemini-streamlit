@@ -22,7 +22,9 @@ GOOGLE_API_KEY=<your_google_api_key>
 5. Run the application by executing ```streamlit run app.py```
 
 ## Instalation EC2
-1. sudo apt update
+```python
+sudo apt update
+```
 2. sudo apt-get update
 3. sudo apt upgrade -y
 4. sudo apt install git curl unzip tar make sudo vim wget -y
