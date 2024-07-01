@@ -1,26 +1,37 @@
-# gemini-streamlit
-app POC gemini / streamlit
+# Gemini PDF Question Answering System
 
-sudo apt update
+### This Streamlit app let's users upload, process multiple PDFs, and ask questions on the content using a conversational chat powered by Google's Gemini-pro.
 
-sudo apt-get update
+## Prerequisites
+* Python 3.10 or higher
+* Streamlit
+* PyPDF2
+* Langchain
+* Google Generative AI
+* Google Cloud SDK
 
-sudo apt upgrade -y
+## Installation
+1. Clone this repository to your local machine.
+2. Create a virtual environment and activate it.
+3. Install the required packages by running ```pip install -r requirements.txt```
+4. Create a ```.env```file in the root directory of the project and add your Google API key:
 
-sudo apt install git curl unzip tar make sudo vim wget -y
+```python
+GOOGLE_API_KEY=<your_google_api_key>
+```
+5. Run the application by executing ```streamlit run app.py```
 
-sudo apt install git curl unzip tar make sudo vim wget -y
+## Usage
+1. Upload one or more PDF files using the file uploader.
+2. Click the "```submit & process```" button to extract text from the PDF files.
+3. Ask a question about the content of the PDF files in the text input field.
+4. The application will use the Langchain and Google Generative AI to find the answer in the context of the PDF files and display it.
 
-git clone "Your-repository"
-
-sudo apt install python3-pip
-
-pip3 install -r requirements.txt
-
-#Temporary running
-python3 -m streamlit run app.py
-
-#Permanent running
-nohup python3 -m streamlit run app.py
-
-Note: Streamlit runs on this port: 8501
+## Code Structure
+* ```app.py```: The main Streamlit application.
+* ```get_pdf_text```: A function to extract text from the uploaded PDF files.
+* ```get_text_chunks```: A function to split the extracted text into smaller chunks.
+* ```get_vector_store```: A function to create a vector database for the text chunks.
+* ```get_conversional_chain```: A function to create a conversational chain for question answering.
+* ```user_input```: A function to handle user input and generate answers.
+* ```main```: The main function that sets up the Streamlit application and runs the user input function.
