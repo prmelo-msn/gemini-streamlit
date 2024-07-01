@@ -22,18 +22,18 @@ GOOGLE_API_KEY=<your_google_api_key>
 5. Run the application by executing ```streamlit run app.py```
 
 ## Instalation EC2
-1. sudo apt update
-2. sudo apt-get update
-3. sudo apt upgrade -y
-5. sudo apt install git curl unzip tar make sudo vim wget -y
-6. git clone "Your-repository"
-7. sudo apt install python3-pip
-8. pip3 install -r requirements.txt
-```#Temporary running
-9. python3 -m streamlit run app.py
-```#Permanent running
-9. nohup python3 -m streamlit run app.py
-```Note: Streamlit runs on this port: 8501
+```sudo apt update
+```sudo apt-get update
+```sudo apt upgrade -y
+```sudo apt install git curl unzip tar make sudo vim wget -y
+```git clone "Your-repository"
+```sudo apt install python3-pip
+```pip3 install -r requirements.txt
+###Temporary running
+```python3 -m streamlit run app.py
+###Permanent running
+```nohup python3 -m streamlit run app.py
+###Note: Streamlit runs on this port: 8501
 
 ## Usage
 1. Upload one or more PDF files using the file uploader.
