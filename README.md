@@ -41,6 +41,20 @@ git clone "Your-repository"
 sudo apt install python3-pip
 ```
 ```python
+sudo apt update
+```
+```python
+sudo apt-get install python3-venv
+```
+```python
+python3 -m venv venv
+```
+
+```python
+source venv/bin/activate
+```
+
+```python
 pip3 install -r requirements.txt
 ```
 ###Temporary running
